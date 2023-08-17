@@ -1,13 +1,12 @@
-ProiectGitHubAPI
+# ProiectGitHubAPI
 
-Acesta este un framework de testare automată pentru API-ul GitHub. Framework-ul este scris în Python și folosește pytest pentru testarea automată și generarea de rapoarte HTML.
+Acesta este un framework de testare automată pentru API-ul GitHub. Framework-ul este scris în Python și folosește `pytest` pentru testarea automată și generarea de rapoarte HTML.
 
+## Instalare 
 
-Instalare
-Clonează acest repository pe calculatorul local:
-
+1. Clonează acest repository pe calculatorul local:
+```bash
 git clone https://github.com/DianaNicoletaA/ProiectGitHubAPI.git
-Navighează în directorul proiectului:
 
 cd ProiectGitHubAPI
 Instalează dependințele proiectului folosind pip:
