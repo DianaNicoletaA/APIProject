@@ -1,7 +1,7 @@
 import requests
 
 username = "DianaNicoletaA"
-token = "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"  # Înlocuiește cu propriul tău token de autentificare
+token = "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"  # Înlocuiește cu propriul tău token de autentificare
 
 headers = {
     "Authorization": f"token {token}"
@@ -14,7 +14,9 @@ response = requests.get(url, headers=headers)
 if response.status_code == 200:
     repos = response.json()  # Transformă răspunsul într-un dicționar Python
 
-    for repo in repos:
-        print(repo["name"])
+    # Filtrăm și listăm doar repository-urile cu numele care începe cu "TestRepo"
+    test_repos = [repo["name"] for repo in repos if repo["name"].startswith("TestRepo")]
+    for repo_name in test_repos:
+        print(repo_name)
 else:
     print(f"Request failed with status code: {response.status_code}")
