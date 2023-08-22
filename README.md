@@ -47,7 +47,7 @@ pytest tests/test_create_issue.py
 
 ## Structura Proiectului
 
-- `test_runner.py`: Script pentru rularea tuturor testelor și generarea rapoartelor.
+- `pytest.py`: Script pentru rularea tuturor testelor și generarea rapoartelor.
 - `tests/`: Directorul care conține toate fișierele de testare individuale.
 - `api/`: Directorul care conține helperii și funcționalitățile pentru interacțiunea cu API-ul.
 - `reports/`: Directorul în care sunt generate rapoartele HTML.
