@@ -1,7 +1,7 @@
 import requests
 
 username = "DianaNicoletaA"
-token = "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"  # Înlocuiește cu propriul tău token de autentificare
+token = "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"  # Inlocuieste cu propriul tau token de autentificare
 
 headers = {
     "Authorization": f"token {token}"
@@ -12,12 +12,12 @@ url = f"https://api.github.com/users/{username}/repos"
 response = requests.get(url, headers=headers)
 
 if response.status_code == 200:
-    repos = response.json()  # Transformă răspunsul într-un dicționar Python
+    repos = response.json()  # Transforma raspunsul intr-un dictionar Python
 
     for repo in repos:
         repo_name = repo["name"]
 
-        # Verifică dacă numele repo-ului începe cu "TestRepo"
+        # Verifica daca numele repo-ului incepe cu "TestRepo"
         if repo_name.startswith("TestRepo"):
             print(f"Deleting {repo_name}...")
 

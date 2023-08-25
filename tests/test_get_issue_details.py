@@ -16,7 +16,7 @@ class TestGetIssueDetails(unittest.TestCase):
         response_create_repo = github_helper.create_repo(unique_repo_name)
         self.assertEqual(response_create_repo.status_code, 201, "Failed to create repository")
 
-        # Crearea unui issue în repository-ul temporar
+        # Crearea unui issue in repository-ul temporar
         issue_title = "Test Issue"
         issue_body = "This is a test issue"
         response_create_issue = github_helper.create_issue(unique_repo_name, issue_title, issue_body)

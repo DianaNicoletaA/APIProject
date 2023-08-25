@@ -7,7 +7,7 @@ class GitHubAPIHelper:
 
     def __init__(self):
         # Fetching the token from environment variable
-        self.token = os.environ.get("GITHUB_API_TOKEN", "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")
+        self.token = os.environ.get("GITHUB_API_TOKEN", "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")
         if not self.token:
             raise ValueError("GITHUB_API_TOKEN environment variable not set!")
 

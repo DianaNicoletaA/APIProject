@@ -7,11 +7,11 @@ class TestUpdateAndCreateRepository(unittest.TestCase):
         github_helper = GitHubAPIHelper()
         new_description = "Updated repository description"
 
-        # Creează repository-ul "TestRepo" pentru a-l actualiza ulterior
+        # Creeaza repository-ul "TestRepo" pentru a-l actualiza ulterior
         create_response = github_helper.create_repo("TestRepo", description="Initial description")
         self.assertEqual(create_response.status_code, 201, "Failed to create repository")
 
-        # Actualizează repository-ul "TestRepo"
+        # Actualizeaza repository-ul "TestRepo"
         update_response = github_helper.update_repo("TestRepo", description=new_description)
         self.assertEqual(update_response.status_code, 200, "Failed to update repository")
         self.assertEqual(update_response.json()["description"], new_description, "Repository description was not updated")
