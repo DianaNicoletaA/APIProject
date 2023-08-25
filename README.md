@@ -19,7 +19,7 @@ Pentru a accesa si testa API-ul GitHub, veti avea nevoie de un token de acces pe
 
 ## Structura Proiectului
 
-- `test_runner.py`: Script pentru rularea tuturor testelor și generarea rapoartelor.
+- `pytest.py`: Script pentru rularea tuturor testelor și generarea rapoartelor.
 - `tests/`: Directorul care conține toate fișierele de testare individuale.
 - `api/`: Directorul care conține helperii și funcționalitațile pentru interacțiunea cu API-ul.
 - `reports/`: Directorul in care sunt generate rapoartele HTML.
