@@ -1,7 +1,7 @@
 import requests
 
 username = "DianaNicoletaA"
-token = "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"  # Înlocuiește cu propriul tău token de autentificare
+token = "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"  # Înlocuiește cu propriul tău token de autentificare
 
 headers = {
     "Authorization": f"token {token}"
