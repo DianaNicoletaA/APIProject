@@ -5,10 +5,10 @@ This is an automated testing framework for the GitHub API. The framework is writ
 ## Installation
 
 1. **Clone this repository to your local machine:**
-   git clone https://github.com/DianaNicoletaA/ProiectGitHubAPI.git
+   git clone https://github.com/DianaNicoletaA/APIProject.git
 
 2. **Navigate to the project directory:**
-   cd ProiectGitHubAPI
+   cd APIProject
 
 3. **Install project dependencies using pip:**
    pip install -r requirements.txt
