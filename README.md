@@ -1,63 +1,59 @@
-# ProiectGitHubAPI
+# API Project
 
-Acesta este un framework de testare automata pentru API-ul GitHub. Framework-ul este scris in Python și folosește `pytest` pentru testarea automata si generarea de rapoarte HTML.
+This is an automated testing framework for the GitHub API. The framework is written in Python and uses pytest for automated testing and HTML report generation.
 
-## Instalare 
+## Installation
 
-1. **Cloneaza acest repository pe calculatorul local:**
-git clone https://github.com/DianaNicoletaA/ProiectGitHubAPI.git
+1. **Clone this repository to your local machine:**
+   git clone https://github.com/DianaNicoletaA/ProiectGitHubAPI.git
 
-2. **Navigheaza in directorul proiectului:**
-cd ProiectGitHubAPI
+2. **Navigate to the project directory:**
+   cd ProiectGitHubAPI
 
-3. **Instaleaza dependintele proiectului folosind pip:**
-pip install -r requirements.txt
+3. **Install project dependencies using pip:**
+   pip install -r requirements.txt
 
-## Configurarea Accesului la API-ul GitHub
+## Configuring GitHub API Access
 
-Pentru a accesa si testa API-ul GitHub, veti avea nevoie de un token de acces personal și de numele de utilizator al contului dvs. GitHub. Aceste detalii trebuie introduse in `api_helper.py`.
+To access and test the GitHub API, you will need a personal access token and your GitHub account username. These details need to be entered into `api_helper.py`.
 
-## Structura Proiectului
+## Project Structure
 
-- `pytest.py`: Script pentru rularea tuturor testelor și generarea rapoartelor.
-- `tests/`: Directorul care conține toate fișierele de testare individuale.
-- `api/`: Directorul care conține helperii și funcționalitațile pentru interacțiunea cu API-ul.
-- `reports/`: Directorul in care sunt generate rapoartele HTML.
+- `pytest.py`: Script for running all tests and generating reports.
+- `tests/`: Directory containing all individual test files.
+- `api/`: Directory containing helpers and functionalities for interacting with the API.
+- `reports/`: Directory where HTML reports are generated.
 
-In plus, proiectul contine si urmatoarele functionalitati suplimentare:
+Additionally, the project includes the following additional features:
 
-- `list_repos.py`: Un script care listeaza repository-urile generate dupa ce ai rulat testele. Acest script iti permite sa afisezi lista completa a repository-urilor create in cadrul testelor.
+- `list_repos.py`: A script that lists the repositories generated after running the tests. This script allows you to display the complete list of repositories created during the tests.
 
-- `delete_repos.py`: Un script care sterge repository-urile generate in timpul testelor. Acest script este util pentru curatarea mediului dupa efectuarea testelor si eliminarea resurselor neutilizate.
+- `delete_repos.py`: A script that deletes the repositories generated during the tests. This script is useful for cleaning up the environment after running the tests and removing unused resources.
 
-Asigura-te ca esti atent la utilizarea acestor functionalitati, in special cand vine vorba de ștergerea repository-urilor, pentru a evita pierderea datelor importante.
+Make sure to be careful when using these functionalities, especially when it comes to deleting repositories, to avoid loss of important data.
 
+## Running Tests
 
-
-## Rulare Teste
-
-- **Pentru a rula toate testele si a genera rapoartele HTML in directorul "reports":**
+- **To run all tests and generate HTML reports in the "reports" directory:**
 pytest --html=reports/report.html
 
 
-- **Pentru a rula un test specific:**
+- **To run a specific test:**
 
-De exemplu, pentru a rula testul `test_create_issue.py`:
+For example, to run the `test_create_issue.py` test:
 pytest tests/test_create_issue.py
 
-## Structura Proiectului
 
-- `pytest.py`: Script pentru rularea tuturor testelor si generarea rapoartelor.
-- `tests/`: Directorul care contine toate fisierele de testare individuale.
-- `api/`: Directorul care contine helperii și functionalitatile pentru interactiunea cu API-ul.
-- `reports/`: Directorul in care sunt generate rapoartele HTML.
+## Project Structure
 
-## Dezinstalare
+- `pytest.py`: Script for running all tests and generating reports.
+- `tests/`: Directory containing all individual test files.
+- `api/`: Directory containing helpers and functionalities for interacting with the API.
+- `reports/`: Directory where HTML reports are generated.
 
-Dezinstaleaza dependintele Python:
+## Uninstallation
+
+Uninstall Python dependencies:
 pip uninstall -r requirements.txt
-Aceasta va dezinstala toate pachetele listate in `requirements.txt`.
-
-
-
+This will uninstall all packages listed in `requirements.txt`.
 
